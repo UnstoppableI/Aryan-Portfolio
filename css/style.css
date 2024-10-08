@@ -2448,7 +2448,7 @@ h6 {
       .about_area .about_img {
         right: 0; }
         .about_area .about_img img {
-          max-width: 100%;
+          max-width: 445px;
           height: auto; } }
     @media (max-width: 991px) {
       .about_area .about_img {
