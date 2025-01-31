@@ -3213,8 +3213,7 @@ h6 {
   .brand-carousel .single-brand-item {
     height: 100px;
     width: 140px; } }
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
+    
 /* Footer Area css
 ============================================================================================ */
 .blog_version .footer_area {
@@ -3281,21 +3280,11 @@ h6 {
     .footer_area .footer_bottom a {
       color: #854fee; }
 
-/* End Footer Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-
-/*# sourceMappingURL=style.css.map */
+/* End Footer Area css */
 
 /* Additional CSS */
 /* General Image Responsiveness */
 img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Ensure banner images resize properly */
-.home_right_img img {
   max-width: 100%;
   height: auto;
 }
