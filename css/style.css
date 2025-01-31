@@ -1,30 +1,4 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: HostHub Construction 
-@Developed By: Naim Lasker
-Author E-mail: naimlasker@gmail.com
-
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
-/*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
 body {
   line-height: 26px;
   font-size: 15px;
@@ -33,12 +7,7 @@ body {
   color: #777777;
   background: url(../img/body-bg.png) no-repeat center; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: #000000; }
@@ -3256,6 +3225,7 @@ h6 {
 .footer_area {
   padding: 120px 0;
   position: relative; }
+
   .footer_area:before {
     content: '';
     position: absolute;
@@ -3265,6 +3235,7 @@ h6 {
     bottom: 0px;
     background: #f9f9fd;
     z-index: -1; }
+
   @media (max-width: 1024px) {
     .footer_area {
       padding: 60px 0; } }
@@ -3275,21 +3246,32 @@ h6 {
       color: #000000;
       margin-top: 35px;
       text-transform: uppercase; }
-  .footer_area .footer_social {
+.footer_area .footer_social {
     text-align: center;
     margin: 25px 0px 30px; }
-    .footer_area .footer_social a {
+.footer_area .footer_social a {
       padding: 0 20px; }
-      .footer_area .footer_social a i {
+.footer_area .footer_social a i {
         color: #788489;
         font-size: 22px;
         -webkit-transition: all 0.4s ease 0s;
         -moz-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s; }
-        @media (max-width: 576px) {
+
+@media (max-width: 576px) {
           .footer_area .footer_social a i {
-            font-size: 25px; } }
+            font-size: 25px; } 
+
+            .container {
+              padding: 0 10px;
+          }
+        
+          .col-lg-6, .col-lg-12, .col-md-6 {
+              max-width: 100%;
+          }
+          }
+
         .footer_area .footer_social a i:hover {
           color: #854fee; }
   .footer_area .footer_bottom {
@@ -3304,3 +3286,82 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+/* Additional CSS */
+/* General Image Responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure banner images resize properly */
+.home_right_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure the portfolio images are also responsive */
+.portfolio_box img, .single_portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust the size of images in the 'features_area' */
+.feature_item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Image adjustments */
+.about_img img {
+  width: 100%;  /* 100% to ensure responsiveness */
+  max-width: 475px; /* Limits the max width */
+  height: auto;
+}
+
+/* Header Image Adjustment */
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom Container and Text Alignment Adjustments for Mobile View */
+@media (max-width: 768px) {
+  .main_menu {
+      padding: 0 15px;
+  }
+
+  .banner_content h1 {
+      font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .banner_content h3 {
+      font-size: 18px;
+  }
+
+  .about_img img {
+      width: 100%;
+      max-width: none;  /* Remove max-width */
+  }
+
+  .feature_item h4 {
+      font-size: 14px;
+  }
+
+  .footer_social i {
+      font-size: 20px;
+      margin: 0 10px;
+  }
+
+  .footer_logo img {
+      max-width: 100%;  /* Ensure the logo scales properly */
+      height: auto;
+  }
+
+  .client-info {
+      margin-top: 30px;
+      text-align: center;
+  }
+}
+
+
