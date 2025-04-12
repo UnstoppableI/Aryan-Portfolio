@@ -1,24 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const listItems = document.querySelectorAll(".cert-list li");
-  const mediaItems = document.querySelectorAll(".cert-media");
-
-  listItems.forEach(item => {
-    item.addEventListener("click", () => {
-      // Remove active from all list items and media
-      listItems.forEach(li => li.classList.remove("active"));
-      mediaItems.forEach(media => media.classList.remove("active"));
-
-      // Add active to clicked item and corresponding media
-      item.classList.add("active");
-      const targetId = item.getAttribute("data-cert");
-      const targetMedia = document.getElementById(targetId);
-      if (targetMedia) {
-        targetMedia.classList.add("active");
-      }
+function showCertificate(certId) {
+    const allCertificates = document.querySelectorAll(".cert-media");
+    allCertificates.forEach(cert => {
+      cert.classList.remove("active");
     });
-  });
-});
-
+  
+    const selectedCert = document.getElementById(certId);
+    if (selectedCert) {
+      selectedCert.classList.add("active");
+    }
+  }
   
   // Portfolio Tab Javascript
   // Wait for the document to be ready
