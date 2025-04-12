@@ -1,14 +1,40 @@
-function showCertificate(certId) {
-    const allCertificates = document.querySelectorAll(".cert-media");
-    allCertificates.forEach(cert => {
-      cert.classList.remove("active");
-    });
-  
-    const selectedCert = document.getElementById(certId);
-    if (selectedCert) {
-      selectedCert.classList.add("active");
-    }
-  }
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+const intervalTime = 4000; // auto-slide every 4 seconds
+let autoSlide = setInterval(showNextSlide, intervalTime);
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+function showNextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}
+
+function showPrevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
+}
+
+document.querySelector('.carousel-nav.next').addEventListener('click', () => {
+  showNextSlide();
+  resetAutoSlide();
+});
+
+document.querySelector('.carousel-nav.prev').addEventListener('click', () => {
+  showPrevSlide();
+  resetAutoSlide();
+});
+
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(showNextSlide, intervalTime);
+}
+
   
   // Portfolio Tab Javascript
   // Wait for the document to be ready

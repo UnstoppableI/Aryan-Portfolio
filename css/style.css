@@ -645,77 +645,64 @@ button:focus {
 ============================================================================================ */
 /*----------------------Start Certificate Css------------------------------ */
 
-.certificate-section {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-.cert-column {
-  flex: 1;
-  padding: 30px;
-}
-
-.cert-list {
-  background: #eef2f6;
-  border-right: 1px solid #ddd;
-}
-
-.cert-list h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.cert-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cert-list li {
-  background: #fff;
-  margin-bottom: 15px;
-  padding: 12px 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.cert-list li:hover {
-  background: #d7e6ff;
-  transform: translateX(5px);
-}
-
-.cert-display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.carousel-container {
   position: relative;
-}
-
-.cert-media {
-  display: none;
-  width: 100%;
-  text-align: center;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.cert-media img {
-  max-width: 100%;
-  max-height: 400px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
-.cert-media.active {
-  display: block;
+.carousel-slide {
+  display: none;
+  text-align: center;
 }
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.carousel-slide.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.carousel-nav:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.carousel-nav.prev {
+  left: 15px;
+}
+
+.carousel-nav.next {
+  right: 15px;
+}
+
 /*------------------------End Certificate Css----------------------------*/
 
 .sample-text-area {
