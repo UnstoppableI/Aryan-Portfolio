@@ -24,7 +24,66 @@
 	<!-- Js -->
 		<script src="script.js"></script>
 	 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<style>
+			.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
 
+.carousel-slide {
+  display: none;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.carousel-slide.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.carousel-nav:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.carousel-nav.prev {
+  left: 15px;
+}
+
+.carousel-nav.next {
+  right: 15px;
+}
+
+		</style>
 </head>
 
 <body>
@@ -218,7 +277,45 @@
 		<button class="carousel-nav prev">&#10094;</button>
 		<button class="carousel-nav next">&#10095;</button>
 	  </div>
-	  
+	  <script>
+		let currentIndex = 0;
+		const slides = document.querySelectorAll('.carousel-slide');
+		const totalSlides = slides.length;
+		const intervalTime = 4000; // auto-slide every 4 seconds
+		let autoSlide = setInterval(showNextSlide, intervalTime);
+
+		function showSlide(index) {
+		slides.forEach((slide, i) => {
+			slide.classList.toggle('active', i === index);
+		});
+		}
+
+		function showNextSlide() {
+		currentIndex = (currentIndex + 1) % totalSlides;
+		showSlide(currentIndex);
+		}
+
+		function showPrevSlide() {
+		currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+		showSlide(currentIndex);
+		}
+
+		document.querySelector('.carousel-nav.next').addEventListener('click', () => {
+		showNextSlide();
+		resetAutoSlide();
+		});
+
+		document.querySelector('.carousel-nav.prev').addEventListener('click', () => {
+		showPrevSlide();
+		resetAutoSlide();
+		});
+
+		function resetAutoSlide() {
+		clearInterval(autoSlide);
+		autoSlide = setInterval(showNextSlide, intervalTime);
+		}
+
+	  </script>
 
 	<!--================ End Certicications Area =================-->
 
