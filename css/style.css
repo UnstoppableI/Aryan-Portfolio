@@ -1906,13 +1906,18 @@ h6 {
         color: #000000; }
 
 .single_portfolio {
-  position: relative; }
-  .single_portfolio .overlay {
+  position: relative; 
+  box-shadow: 5px 5px 5px 5px #888;
+}
+
+.single_portfolio .overlay {
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; }
-  .single_portfolio .icon {
+    transition: all 0.4s ease 0s; 
+  }
+
+.single_portfolio .icon {
     position: absolute;
     top: 25%;
     left: 25%;
@@ -1926,8 +1931,10 @@ h6 {
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; }
-    .single_portfolio .icon span {
+    transition: all 0.4s ease 0s; 
+  }
+
+.single_portfolio .icon span {
       font-size: 100px;
       display: inline-block;
       -webkit-transform: rotate(135deg);
@@ -1936,17 +1943,23 @@ h6 {
       -o-transform: rotate(135deg);
       transform: rotate(135deg);
       color: #ffffff;
-      cursor: pointer; }
-  .single_portfolio:hover .overlay {
-    background: rgba(77, 87, 222, 0.5); }
-  .single_portfolio:hover .icon {
+      cursor: pointer; 
+  }
+  
+.single_portfolio:hover .overlay {
+    background: rgba(77, 87, 222, 0.5); 
+  }
+
+.single_portfolio:hover .icon {
     opacity: 1;
     visibility: visible;
     top: 50%;
-    left: 50%; }
+    left: 50%; 
+  }
 
 .portfolio_details_inner .row {
   margin-bottom: 65px; }
+  
   @media (max-width: 480px) {
     .portfolio_details_inner .row {
       margin-bottom: 30px; } }
@@ -2577,7 +2590,7 @@ img {
 /* Make sure the portfolio images are also responsive */
 .portfolio_box img, .single_portfolio img {
   width: 100%;
-  height: auto;
+  height: 190px;
 }
 
 /* Adjust the size of images in the 'features_area' */
