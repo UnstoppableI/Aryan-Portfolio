@@ -25,64 +25,7 @@
 		<script src="script.js"></script>
 	 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 		<style>
-			.carousel-container {
-  position: relative;
-  width: 90%;
-  max-width: 600px;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  background: #fff;
-}
-
-.carousel-slide {
-  display: none;
-  text-align: center;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-}
-
-.carousel-slide.active {
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.carousel-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  border: none;
-  padding: 12px;
-  cursor: pointer;
-  font-size: 24px;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.carousel-nav:hover {
-  background: rgba(0,0,0,0.6);
-}
-
-.carousel-nav.prev {
-  left: 15px;
-}
-
-.carousel-nav.next {
-  right: 15px;
-}
-
+		
 		</style>
 </head>
 
@@ -110,6 +53,56 @@
 		</div>
 	</header>
 	<!--================ End Header Area =================-->
+<!-- 	Hero Section Start -->
+
+	<div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-text">
+        <h1>OJS Journal Website</h1>
+        <p>Fully customized academic journal site using OJS. Features clean layout, editorial workflow optimization, and responsive design.</p>
+      </div>
+      <div class="carousel-image">
+        <img src="image1.jpg" alt="Project 1">
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-text">
+        <h1>Custom eLearning Platform</h1>
+        <p>Developed an LMS with interactive lessons, quiz modules, and student progress tracking using HTML, JS, and Bootstrap.</p>
+      </div>
+      <div class="carousel-image">
+        <img src="image2.jpg" alt="Project 2">
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="carousel-text">
+        <h1>Business Portfolio Website</h1>
+        <p>Created a sleek, animated portfolio for a startup, showcasing services, testimonials, and a modern UI with CSS transitions.</p>
+      </div>
+      <div class="carousel-image">
+        <img src="image3.jpg" alt="Project 3">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- 	Hero Section End -->
 
 	<!--================ Start Home Banner Area =================-->
 	<section class="home_banner_area">
@@ -139,32 +132,29 @@
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5 px-3">
-					<div class="about_img rounded">
-						<img class="img-fluid" src="img/6069108661688583302.jpg">
-					</div>
-				</div>
+<section style="display: flex; align-items: center; justify-content: center; padding: 40px; gap: 40px; flex-wrap: wrap;">
+  <!-- Left Image -->
+  <div style="flex: 1; min-width: 280px; max-width: 400px; text-align: center;">
+    <img src="img/6069108661688583302.jpg" alt="Profile" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);" />
+  </div>
 
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p>
-							Dedicated Web Developer and Product Manager. Graduted in BCA from United Institute of Management in 2024. Having both tech and non-tech skills including C++, Java, HTML, CSS, JS and SEO, etc. Non-tech skills includes Presentation, Interpersonal Communication, Team Management and Business Development skills.
-						</p>
-						<p>
-							Having good experience from internships in Product Management and Web Development.
-						</p>
-						<a class="primary_btn" href="https://docs.google.com/document/d/15TF0bPiEXfSBwuBaaNzbmcHS9QfyB99J/edit?usp=sharing&ouid=103799698499535496352&rtpof=true&sd=true"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- Right Text Column -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px;">
+    <h2 style="font-size: 2em; font-weight: bold;">LET’S<br>INTRODUCE ABOUT<br>MYSELF</h2>
+    <p style="margin-top: 16px; color: #555;">
+      Dedicated Web Developer and Product Manager. Graduated in BCA from United Institute of Management in 2024.
+      Having both tech and non-tech skills including C++, Java, HTML, CSS, JS and SEO, etc.
+      Non-tech skills include Presentation, Interpersonal Communication, Team Management and Business Development skills.
+    </p>
+    <p style="margin-top: 16px; color: #555;">
+      Having good experience from internships in Product Management and Web Development.
+    </p>
+    <a href="your-cv-link.pdf" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background: linear-gradient(to right, #6a11cb, #2575fc); color: white; border-radius: 8px; text-decoration: none;">
+      DOWNLOAD CV
+    </a>
+  </div>
+</section>
+
 	<!--================ End About Us Area =================-->
 	
 	<!--================ Skills Area =================-->
