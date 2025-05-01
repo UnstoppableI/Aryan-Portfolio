@@ -100,7 +100,7 @@ button:focus {
 
   .carousel-text {
     clip-path: none;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     text-align: center;
   }
 
@@ -1784,11 +1784,11 @@ h6 {
       padding-bottom: 50px; } }
 
 .feature_item {
-  padding: 45px 25px;
+  /* padding: 45px 25px; */
   text-align: center;
   background: #f9f9fd;
   cursor: pointer;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -2237,9 +2237,6 @@ h6 {
     margin-top: 27px;
     margin-bottom: 23px; }
 
-  .header_area .navbar {
-    background: #000; }
-
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
 
@@ -2287,7 +2284,7 @@ h6 {
     display: block;
     border-bottom: 1px solid #ededed33;
     border-radius: 0px;
-    color: #fff; }
+     }
 
   .header_area .navbar .search {
     margin-left: 0px; }
@@ -2560,7 +2557,6 @@ h6 {
   position: relative; }
 
   .footer_area:before {
-    content: '';
     position: absolute;
     top: -200px;
     left: 0px;
