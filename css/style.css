@@ -52,120 +52,62 @@ button:focus {
 
 /*---------------------------------------------------- */
 /* 	Hero Section Crousel CSS Start*/
-		.carousel-item {
-		      display: flex;
-		      height: 100vh;
-		    }
-		
-		    .carousel-text {
-		      background: linear-gradient(135deg, #4458dc, #854fee);
-		      color: white;
-		      flex: 1;
-		      padding: 80px 60px;
-		      display: flex;
-		      flex-direction: column;
-		      justify-content: center;
-		      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-		    }
-		
-		    .carousel-text h1 {
-		      font-size: 3rem;
-		      margin-bottom: 20px;
-		    }
-		
-		    .carousel-text p {
-		      font-size: 1.2rem;
-		    }
-		
-		    .carousel-image {
-		      flex: 1;
-		      display: flex;
-		      align-items: center;
-		      justify-content: center;
-		      background: #f5f5f5;
-		    }
-		
-		    .carousel-image img {
-		      max-width: 90%;
-		      border-radius: 12px;
-		      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-		    }
-		
-		    @media (max-width: 768px) {
-		      .carousel-item {
-		        flex-direction: column;
-		        height: auto;
-		      }
-		
-		      .carousel-text {
-		        clip-path: none;
-		        padding: 40px 20px;
-		        text-align: center;
-		      }
-		
-		      .carousel-image {
-		        padding: 20px;
-		      }
-		    }
-		/* 	Hero Section Crousel CSS End */
-		.carousel-container {
-		  position: relative;
-		  width: 90%;
-		  max-width: 600px;
-		  margin: 40px auto;
-		  overflow: hidden;
-		  border-radius: 16px;
-		  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-		  background: #fff;
-		}
-		
-		.carousel-slide {
-		  display: none;
-		  text-align: center;
-		}
-		
-		.carousel-slide img {
-		  width: 100%;
-		  height: auto;
-		  border-radius: 16px;
-		}
-		
-		.carousel-slide.active {
-		  display: block;
-		  animation: fadeIn 0.5s ease-in-out;
-		}
-		
-		@keyframes fadeIn {
-		  from { opacity: 0; transform: scale(0.98); }
-		  to { opacity: 1; transform: scale(1); }
-		}
-		
-		.carousel-nav {
-		  position: absolute;
-		  top: 50%;
-		  transform: translateY(-50%);
-		  background: rgba(0,0,0,0.4);
-		  color: white;
-		  border: none;
-		  padding: 12px;
-		  cursor: pointer;
-		  font-size: 24px;
-		  border-radius: 50%;
-		  transition: background 0.3s;
-		}
-		
-		.carousel-nav:hover {
-		  background: rgba(0,0,0,0.6);
-		}
-		
-		.carousel-nav.prev {
-		  left: 15px;
-		}
-		
-		.carousel-nav.next {
-		  right: 15px;
-		}
+.carousel-item > .slide-inner {
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
 
+.carousel-text {
+  flex: 1;
+  background: linear-gradient(135deg, #4458dc, #854fee);
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.carousel-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.carousel-text p {
+  font-size: 1.2rem;
+}
+
+.carousel-image {
+  flex: 1;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image img {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .carousel-item > .slide-inner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carousel-text {
+    clip-path: none;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .carousel-image {
+    padding: 20px;
+  }
+}
 /*----------------------------------------------------*/
 .section_gap {
   padding: 200px 0; }
