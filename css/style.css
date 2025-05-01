@@ -2492,23 +2492,7 @@ h6 {
 
   /*Recent Update Area css
   ============================================================================================ */
-  /* Elements Area css
-  ============================================================================================ */
-  .sample-text-area {
-    padding: 70px 0 70px 0; }
-
-  .generic-blockquote {
-    padding: 30px 15px 30px 30px; }
-
-  /* End Elements Area css
-  ============================================================================================ */
-  /* Blog Page Area css
-  ============================================================================================ */
-  .blog_details h2 {
-    font-size: 20px;
-    line-height: 30px; }
-
-  /* End Blog Page Area css
+  
   ============================================================================================ */
   /* Footer Area css
   ============================================================================================ */
@@ -2547,14 +2531,8 @@ h6 {
   .banner_area .banner_inner .banner_content h2 {
     font-size: 32px; }
 
-  /* Blog Page Area css
-  ============================================================================================ */
-  .comments-area .thumb {
-    margin-right: 10px; }
-
-  /* End Blog Page Area css
-  ============================================================================================ */
-  .testi_item .media .d-flex {
+  /* ---------------------------------------- */
+    .testi_item .media .d-flex {
     padding-right: 0px; }
 
   .testi_item .media .d-flex img {
@@ -2587,9 +2565,7 @@ h6 {
     top: -200px;
     left: 0px;
     right: 0px;
-    bottom: 0px;
-    background: #f9f9fd;
-    z-index: -1; }
+    bottom: 0px;}
 
   @media (max-width: 1024px) {
     .footer_area {
