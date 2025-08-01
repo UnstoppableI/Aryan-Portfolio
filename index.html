@@ -336,37 +336,67 @@
 
 		<div class="cards-container">
 		<div class="card">
-			<div class=""><img src="img/ojs/Internat_Journal.png" alt="" width="200px" height="100px"></div>
+			<div class=""><img src="img/ojs/Internat_Journal.png" alt="" width="250px" height="163px" style="width: 250px; height: 163px !important;"></div>
 			<h3>Theme Customization(OJS)</h3>
 			<p>Design like your desired refrence website/journals.</p>
-			<button>Learn more</button>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="OJS (Open Journal Systems) theme design significantly impacts a journal's reputation, user experience, and search engine optimization (SEO). A well-designed theme enhances the journal's visual appeal, making it more engaging for visitors, and improves its overall usability and accessibility.">
+			Learn more
+			</button>
 		</div>
 		<div class="card">
-			<div class=""><img src="img/services/captcha.png" alt="" width="250px" height="100px" style="image-rendering: optimizeQuality; "></div>
+			<div class=""><img src="img/services/captcha.png" alt="" width="250px" height="100px" style="width: 250px; height: 163px !important;"></div>
 			<h3>Srcurity Captcha Integration for Bots Protection</h3>
 			<p>From Google and CloudFare Security Applications</p>
-			<button>Learn more</button>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="Google reCAPTCHA helps protect websites from spam and abuse by distinguishing between human users and automated bots. It achieves this through advanced risk analysis techniques, often without requiring users to complete a challenge. By analyzing user behavior and other factors, reCAPTCHA can identify malicious traffic and block bots while allowing legitimate users to access the site easily. ">
+			Learn more
+			</button>
 		</div>
 		<div class="card">
-			<div class=""><img src="img/services/chatbot.png" alt="" height="100px" width="200px"></div>
+			<div class=""><img src="img/services/chatbot.png" alt="" height="163px" width="250px" style="height: 163px !important; width: 250px;"></div>
 			<h3>AI ChatBots In Website</h3>
 			<p>For Automating/Fast Customer Query Resolution.</p>
-			<button>Learn more</button>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="AI chatbots on websites significantly enhance user experience and business operations by providing instant, 24/7 customer support, automating repetitive tasks, generating leads, personalizing interactions, and offering valuable insights into customer behavior, ultimately boosting efficiency and satisfaction while reducing costs. ">
+			Learn more
+			</button>
 		</div>
 		<div class="card">
-			<div class=""><img src="img/services/s3.png" alt=""></div>
+			<div class=""><img src="img/services/s3.png" alt="" ></div>
 			<h3>Page Visitor Metrics</h3>
-			<p>For tracking your </p>
-			<button>Learn more</button>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="It provides a visual representation of visitor distribution and can be useful for understanding audience reach and targeting marketing efforts. ">
+			Learn more
+			</button>
 		</div>
 		<div class="card">
 			<div class=""><img src="img/services/s1.png" alt=""></div>
 			<h3>Custom Plugins Development</h3>
-			<button>Learn more</button>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="Developing custom plugins for customize theme or fulfilling requirements of extra features in website.">
+			Learn more
+			</button>
 		</div>
 		<div class="card">
 			<div class=""><img src="img/services/s4.png" alt=""></div>
 			<h3>Article Uploading (OJS)</h3>
+			<button type="button" class="btn btn-secondary"
+					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-custom-class="custom-tooltip"
+					data-bs-title="">
+			Learn more
+			</button>
 		</div>
 		
 		</div>
@@ -375,6 +405,10 @@
 		<button>View More</button>
 		</div>
 	</section>
+	<script>
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+	</script>
 	<!--================ Services Area ================ -->
 
 	<!--================ Srart Companies Area =================-->
