@@ -489,9 +489,121 @@ button:focus {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/* Latest Blog Area css
+/* Services Area css
 ============================================================================================ */
-/* End Latest Blog Area css
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+    .services-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .services-section small {
+      color: #7b61ff;
+      font-weight: 600;
+    }
+
+    .services-section h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .services-section p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 25px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      background: #ffd6f6;
+      border-radius: 50%;
+      padding: 10px;
+      display: inline-block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      background-color: #7b61ff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .view-more {
+      margin-top: 30px;
+    }
+
+    .view-more button {
+      background-color: #7b61ff;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+/* End Services Area css
 ============================================================================================ */
 .blog_btn {
   border: 1px solid #eeeeee;
